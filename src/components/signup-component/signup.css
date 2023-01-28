@@ -1,0 +1,7 @@
+.signUpForm .backtosignin{
+    color: rgb(25, 92, 179);
+    position: static;
+    font-size: .9rem;
+    display: grid;
+    place-items: center;
+}

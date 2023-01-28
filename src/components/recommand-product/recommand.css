@@ -1,0 +1,9 @@
+.pr-item{
+    position:relative;
+    width:300px;
+}
+
+.pr-item img{
+    width:100%;
+    height:250px;
+}

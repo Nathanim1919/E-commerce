@@ -1,0 +1,44 @@
+.header{
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    display: flex;
+    z-index: 10;
+    left: 0;
+    padding:.3rem 2rem;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .options{
+    display: block;
+    padding-right: 4rem;
+}
+
+.header .options ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.header .options ul a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.header .options ul a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 196, 0);
+    position: absolute;
+    bottom: -1.8rem;
+    left: 0;
+    transition: width 400ms ease-in;
+}
+.header .options ul a.active::after{
+    width: 100%;
+}

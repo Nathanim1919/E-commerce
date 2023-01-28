@@ -1,0 +1,105 @@
+.item{
+    max-width: 400px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.137);
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 9px;
+    animation: animate 2s;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .5s ease-in;
+}
+
+.item img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    transition: all .4s ease-in-out;
+}
+.item .image{
+    position: relative;
+}
+.item .image::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.488);
+    top: 0;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.item:hover .image::after{
+    width: 100%;
+}
+
+.favorite{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.content .items-info p{
+    width: 90%;
+  font-size: .98rem;
+  color: rgb(112, 110, 110);
+}
+.content .items-info h4{
+    color: rgb(95, 93, 93);
+}
+.content .carts i:first-child{
+    color: orangered;
+}
+.content *{
+    margin: .31rem;
+}
+
+.content .carts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.item:hover .content .upper{
+    top: 0;
+}
+.backtohome{
+    animation: animate 2s;
+    cursor: pointer;
+    z-index: 10;
+    position: fixed;
+    left:0rem;
+    padding: .5rem 3rem;
+    top:0rem;
+    color: #fff;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    transition: all .31s ease-in-out;
+}
+.backtohome:hover{
+    left: -.5rem;
+    width: 100%;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(-5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+

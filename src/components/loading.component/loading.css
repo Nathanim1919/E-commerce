@@ -1,0 +1,37 @@
+.loadingSection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    background-color: rgb(46, 48, 48);
+}
+
+.loadingSection .loading-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .31rem;
+     animation: animate .21s linear infinite;
+}
+
+.loadingSection .loading-items > div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    animation: animate2 1s linear infinite;
+    background-color: rgb(232, 233, 235);
+
+}
+
+
+@keyframes animate2 {
+    100%
+    {
+        transform: rotate(360deg)
+    }
+   
+}

@@ -1,0 +1,53 @@
+.signupPage{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(43, 44, 44, 0);
+}
+
+
+.signUpForm{
+   background-color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding:2rem;
+   display: grid;
+   gap: 1rem;
+   border-radius: 5px;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082);
+}
+.signUpForm form{
+    display: grid;
+    gap: 1rem;
+}
+.signUpForm form input[type="submit"]{
+    background-color: rgb(101, 101, 223);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: 1px solid #eee;
+
+}
+
+.signUpForm input{
+    padding: .4rem 1rem;
+    border: 1px solid #eee;
+    font-family: inherit;
+}
+
+.signinwithgoogle{
+    background-color: rgb(230, 58, 58);
+    color: rgb(255, 255, 255);
+    padding: .4rem 1rem;
+    border: none;
+    font-weight: bolder;
+}
+.signupPage .createnewacount{
+    position: static;
+    font-size: .9rem;
+    color: rgb(22, 119, 163);
+}

@@ -1,0 +1,33 @@
+.membershipPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    position: fixed;
+    animation: anim 1s linear;
+    place-items: center;
+}
+
+.membershipPage a{
+    color: #fff;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.4rem;
+}
+@keyframes anim {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
